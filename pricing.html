@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JUNBI | Pricing</title>
+<meta name="description" content="Choose your JUNBI plan. Monthly $9.99 or Annual $99.99. Unlock unlimited access to world-class taekwondo training.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#1e90ff;--dark-blue:#1565c0;--bg:#0f1117;--surface:#161a25;--surface-2:#1c2130;--border:rgba(255,255,255,.06);--gold:#d4af37;--green:#22c55e;--white:#fff;--text:#c8cdd5;--text-dim:#6b7280}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--white);overflow-x:hidden;font-family:'Rajdhani',sans-serif}
+h1,h2,h3,h4{font-family:'Bebas Neue',sans-serif;letter-spacing:2px}
+a{text-decoration:none;color:inherit}
+::selection{background:rgba(30,144,255,.3);color:#fff}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--bg);border-bottom:1px solid var(--border);padding:12px 0}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo img{height:28px}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-link{font-size:14px;font-weight:600;color:var(--text-dim);letter-spacing:1px;text-transform:uppercase;transition:color .2s}.nav-link:hover{color:var(--white)}
+.nav-link.active{color:var(--blue)}
+.nav-cta{font-size:13px;font-weight:700;color:var(--white);letter-spacing:1px;text-transform:uppercase;padding:8px 20px;border-radius:6px;background:var(--blue);transition:opacity .2s}.nav-cta:hover{opacity:.85}
+.hamburger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:8px}.hamburger span{display:block;width:22px;height:2px;background:var(--white);border-radius:2px}
+.mobile-menu{display:none;background:var(--surface);padding:16px 24px 24px;border-bottom:1px solid var(--border)}
+.mobile-menu a{display:block;font-size:16px;font-weight:600;color:var(--text);padding:12px 0;border-bottom:1px solid var(--border);text-transform:uppercase;letter-spacing:2px}
+.mobile-menu .mob-cta{text-align:center;margin-top:16px;padding:12px;border-radius:8px;background:var(--blue);border:none;color:var(--white)}
+@media(max-width:768px){.nav-links{display:none!important}.hamburger{display:flex!important}.mobile-menu.open{display:block!important}}
+
+/* Pricing cards */
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:800px;margin:0 auto}
+@media(max-width:640px){.pricing-grid{grid-template-columns:1fr}}
+
+.price-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:36px 32px;position:relative;transition:border-color .3s}
+.price-card:hover{border-color:rgba(255,255,255,.12)}
+.price-card.featured{border-color:rgba(30,144,255,.3)}
+.price-card.featured:hover{border-color:rgba(30,144,255,.5)}
+
+.best-value{position:absolute;top:-12px;right:20px;background:var(--blue);color:var(--white);font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;padding:4px 14px;border-radius:6px}
+
+.plan-name{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:2px;margin:0 0 16px}
+.plan-price{display:flex;align-items:baseline;gap:4px;margin:0 0 6px}
+.plan-price .amount{font-family:'Bebas Neue',sans-serif;font-size:52px;color:var(--blue);line-height:1}
+.plan-price .period{font-size:18px;color:var(--text-dim);font-weight:600}
+.plan-save{font-size:14px;font-weight:700;color:var(--green);margin:0 0 24px}
+
+.plan-features{list-style:none;margin:0 0 28px;padding:0}
+.plan-features li{display:flex;align-items:flex-start;gap:10px;font-size:15px;color:var(--text);padding:8px 0;border-bottom:1px solid var(--border)}
+.plan-features li:last-child{border-bottom:none}
+.plan-features .check{color:var(--green);font-weight:700;font-size:16px;flex-shrink:0;margin-top:1px}
+
+.plan-btn{display:block;width:100%;text-align:center;font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:2px;color:var(--white);padding:14px;border-radius:10px;background:var(--blue);transition:opacity .2s;border:none;cursor:pointer}.plan-btn:hover{opacity:.85}
+
+/* Features grid */
+.features-section{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:48px 36px;max-width:800px;margin:48px auto 0}
+.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px}
+.feature-item h4{font-size:16px;letter-spacing:1px;margin:0 0 4px}
+.feature-item p{font-size:13px;color:var(--text-dim);line-height:1.5;margin:0}
+.feature-icon{font-size:24px;margin-bottom:8px}
+
+/* Footer */
+footer a:hover{color:var(--white)}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><img src="images/logo-nav.png" alt="JUNBI"></a>
+    <div class="nav-links"><a href="/#about" class="nav-link">About</a><a href="/#instructors" class="nav-link">Instructors</a><a href="#" class="nav-link active">Pricing</a><a href="/#faq" class="nav-link">FAQ</a><a href="#" class="nav-cta">Start Free Trial</a></div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu"><a href="/#about">About</a><a href="/#instructors">Instructors</a><a href="#">Pricing</a><a href="/#faq">FAQ</a><a href="#" class="mob-cta">Start Free Trial</a></div>
+</nav>
+
+<!-- PRICING HERO -->
+<section style="padding:120px 24px 0;text-align:center">
+  <h1 style="font-size:clamp(40px,6vw,60px);margin:0 0 8px">CHOOSE YOUR PLAN</h1>
+  <p style="font-size:18px;color:var(--text-dim);margin:0 0 48px">Unlock unlimited access to world-class martial arts training</p>
+
+  <div class="pricing-grid">
+    <!-- MONTHLY -->
+    <div class="price-card">
+      <h3 class="plan-name">Monthly</h3>
+      <div class="plan-price"><span class="amount">$9.99</span><span class="period">/month</span></div>
+      <div style="height:20px"></div>
+      <ul class="plan-features">
+        <li><span class="check">✓</span> Access to all training drills</li>
+        <li><span class="check">✓</span> New content weekly</li>
+        <li><span class="check">✓</span> HD video quality</li>
+        <li><span class="check">✓</span> Mobile &amp; desktop access</li>
+        <li><span class="check">✓</span> Cancel anytime</li>
+      </ul>
+      <a href="/signup" class="plan-btn">SUBSCRIBE MONTHLY</a>
+    </div>
+
+    <!-- ANNUAL -->
+    <div class="price-card featured">
+      <div class="best-value">BEST VALUE</div>
+      <h3 class="plan-name">Annual</h3>
+      <div class="plan-price"><span class="amount">$99.99</span><span class="period">/year</span></div>
+      <p class="plan-save">Save $20 per year!</p>
+      <ul class="plan-features">
+        <li><span class="check">✓</span> Everything in Monthly, plus:</li>
+        <li><span class="check">✓</span> 2 months FREE</li>
+        <li><span class="check">✓</span> Priority support</li>
+        <li><span class="check">✓</span> Early access to new content</li>
+        <li><span class="check">✓</span> Exclusive workshops</li>
+      </ul>
+      <a href="/signup" class="plan-btn">SUBSCRIBE ANNUALLY</a>
+    </div>
+  </div>
+
+  <!-- WHAT YOU GET -->
+  <div class="features-section">
+    <h2 style="font-size:36px;text-align:center;margin:0 0 32px">WHAT YOU GET</h2>
+    <div class="features-grid">
+      <div class="feature-item"><div class="feature-icon">🥋</div><h4>Expert Instruction</h4><p>Learn from world-class martial artists and certified instructors</p></div>
+      <div class="feature-item"><div class="feature-icon">📚</div><h4>Comprehensive Library</h4><p>50+ drills covering kicks, sparring, forms, weapons, and more</p></div>
+      <div class="feature-item"><div class="feature-icon">📱</div><h4>Train Anywhere</h4><p>Access on any device — phone, tablet, or computer</p></div>
+      <div class="feature-item"><div class="feature-icon">🎯</div><h4>Track Progress</h4><p>Monitor your training sessions and tournament performance</p></div>
+      <div class="feature-item"><div class="feature-icon">⚡</div><h4>New Content Weekly</h4><p>Fresh drills and techniques added every week</p></div>
+      <div class="feature-item"><div class="feature-icon">🥇</div><h4>All Skill Levels</h4><p>From beginner white belts to advanced black belts</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding:80px 24px;max-width:700px;margin:0 auto">
+  <h2 style="font-size:clamp(32px,4.5vw,46px);text-align:center;margin:0 0 36px">FREQUENTLY ASKED QUESTIONS</h2>
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <details style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px 24px;cursor:pointer">
+      <summary style="font-size:17px;font-weight:700;letter-spacing:.5px;list-style:none;display:flex;justify-content:space-between;align-items:center">Can I cancel anytime? <span style="color:var(--blue);font-size:20px;transition:transform .2s">+</span></summary>
+      <p style="font-size:15px;color:var(--text);line-height:1.7;margin:14px 0 0">Yes! Both monthly and annual plans can be cancelled at any time. No long-term contracts or cancellation fees.</p>
+    </details>
+    <details style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px 24px;cursor:pointer">
+      <summary style="font-size:17px;font-weight:700;letter-spacing:.5px;list-style:none;display:flex;justify-content:space-between;align-items:center">Is there a free trial? <span style="color:var(--blue);font-size:20px">+</span></summary>
+      <p style="font-size:15px;color:var(--text);line-height:1.7;margin:14px 0 0">Yes! Start with a 7-day free trial. No credit card required. Full access to all drills and features.</p>
+    </details>
+    <details style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px 24px;cursor:pointer">
+      <summary style="font-size:17px;font-weight:700;letter-spacing:.5px;list-style:none;display:flex;justify-content:space-between;align-items:center">What devices can I use? <span style="color:var(--blue);font-size:20px">+</span></summary>
+      <p style="font-size:15px;color:var(--text);line-height:1.7;margin:14px 0 0">JUNBI works on any device with a web browser — phones, tablets, laptops, and desktop computers.</p>
+    </details>
+    <details style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px 24px;cursor:pointer">
+      <summary style="font-size:17px;font-weight:700;letter-spacing:.5px;list-style:none;display:flex;justify-content:space-between;align-items:center">How often is new content added? <span style="color:var(--blue);font-size:20px">+</span></summary>
+      <p style="font-size:15px;color:var(--text);line-height:1.7;margin:14px 0 0">New drills and training content are added weekly. Annual subscribers get early access to new releases.</p>
+    </details>
+    <details style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px 24px;cursor:pointer">
+      <summary style="font-size:17px;font-weight:700;letter-spacing:.5px;list-style:none;display:flex;justify-content:space-between;align-items:center">Can I switch plans? <span style="color:var(--blue);font-size:20px">+</span></summary>
+      <p style="font-size:15px;color:var(--text);line-height:1.7;margin:14px 0 0">Absolutely. You can upgrade from monthly to annual at any time through your account settings.</p>
+    </details>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="padding:60px 24px 80px;text-align:center">
+  <h2 style="font-size:clamp(28px,4vw,40px);margin:0 0 12px">STILL HAVE QUESTIONS?</h2>
+  <p style="font-size:16px;color:var(--text-dim);margin:0 0 24px">Reach out and we'll help you find the right plan.</p>
+  <a href="mailto:support@junbi.com" style="font-size:15px;font-weight:700;color:var(--blue);letter-spacing:1px">support@junbi.com</a>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:var(--bg);border-top:1px solid var(--border);padding:48px 24px 28px">
+  <div style="max-width:1100px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:36px;margin-bottom:40px">
+      <div>
+        <a href="/" style="display:inline-block;margin-bottom:14px"><img src="images/logo-nav.png" alt="JUNBI" style="height:22px"></a>
+        <p style="font-size:13px;color:var(--text-dim);line-height:1.6;max-width:220px">Elite taekwondo training from world champions. Are you ready?</p>
+      </div>
+      <div><h4 style="font-size:14px;letter-spacing:2px;margin:0 0 14px;color:var(--text)">Platform</h4><a href="/#about" style="display:block;font-size:13px;color:var(--text-dim);margin-bottom:8px">About</a><a href="/#instructors" style="display:block;font-size:13px;color:var(--text-dim);margin-bottom:8px">Instructors</a><a href="#" style="display:block;font-size:13px;color:var(--text-dim);margin-bottom:8px">Pricing</a><a href="/#faq" style="display:block;font-size:13px;color:var(--text-dim);margin-bottom:8px">FAQ</a></div>
+      <div><h4 style="font-size:14px;letter-spacing:2px;margin:0 0 14px;color:var(--text)">Account</h4><a href="#" style="display:block;font-size:13px;color:var(--text-dim);margin-bottom:8px">Sign Up</a><a href="#" style="display:block;font-size:13px;color:var(--text-dim);margin-bottom:8px">Log In</a><a href="#" style="display:block;font-size:13px;color:var(--text-dim);margin-bottom:8px">Contact</a></div>
+      <div><h4 style="font-size:14px;letter-spacing:2px;margin:0 0 14px;color:var(--text)">Legal</h4><a href="#" style="display:block;font-size:13px;color:var(--text-dim);margin-bottom:8px">Terms of Service</a><a href="#" style="display:block;font-size:13px;color:var(--text-dim);margin-bottom:8px">Privacy Policy</a></div>
+    </div>
+    <div style="border-top:1px solid var(--border);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <p style="font-size:12px;color:var(--text-dim);margin:0;opacity:.6">&copy; 2026 JUNBI. All rights reserved.</p>
+      <p style="font-size:12px;color:var(--text-dim);margin:0;opacity:.4">support@junbi.com</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const hb=document.getElementById('hamburger'),mm=document.getElementById('mobile-menu');
+hb.addEventListener('click',()=>mm.classList.toggle('open'));
+mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mm.classList.remove('open')));
+</script>
+</body>
+</html>
