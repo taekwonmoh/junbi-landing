@@ -52,10 +52,10 @@ a{text-decoration:none;color:inherit}
 <nav class="nav" id="navbar">
   <div class="nav-inner">
     <a href="/" class="nav-logo"><img src="images/logo-nav.png" alt="JUNBI"></a>
-    <div class="nav-links"><a href="#about" class="nav-link">About</a><a href="#instructors" class="nav-link">Instructors</a><a href="#pricing" class="nav-link">Pricing</a><a href="#faq" class="nav-link">FAQ</a><a href="#signup" class="nav-cta">Start Free Trial</a></div>
+    <div class="nav-links"><a href="#about" class="nav-link">About</a><a href="#instructors" class="nav-link">Instructors</a><a href="pricing.html" class="nav-link">Pricing</a><a href="#faq" class="nav-link">FAQ</a><a href="#signup" class="nav-cta">Start Free Trial</a></div>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
-  <div class="mobile-menu" id="mobile-menu"><a href="#about">About</a><a href="#instructors">Instructors</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#signup" class="mob-cta">Start Free Trial</a></div>
+  <div class="mobile-menu" id="mobile-menu"><a href="#about">About</a><a href="#instructors">Instructors</a><a href="pricing.html">Pricing</a><a href="#faq">FAQ</a><a href="#signup" class="mob-cta">Start Free Trial</a></div>
 </nav>
 
 <section style="padding:140px 24px 80px;text-align:center">
@@ -66,7 +66,7 @@ a{text-decoration:none;color:inherit}
     <div style="width:60px;height:2px;background:var(--blue);margin:0 auto 24px;border-radius:1px"></div>
     <p style="font-size:clamp(16px,2vw,20px);color:var(--text);line-height:1.6;margin:0 auto 12px;max-width:560px">Train with world champions. 500+ drills. Master elite taekwondo techniques, anytime.</p>
     <p style="font-size:clamp(15px,1.8vw,18px);color:var(--text-dim);margin:0 auto 28px;max-width:560px"><span style="color:var(--gold);font-weight:700">$10/month</span> for founding members.</p>
-    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:28px"><a href="#signup" class="btn-primary">START FREE TRIAL</a><a href="#pricing" class="btn-outline">SEE PRICING</a></div>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:28px"><a href="#signup" class="btn-primary">START FREE TRIAL</a><a href="pricing.html" class="btn-outline">SEE PRICING</a></div>
     <span class="badge"><span class="badge-dot"></span>🔥 37 founding spots remaining</span>
     <div style="display:flex;gap:48px;justify-content:center;flex-wrap:wrap;margin-top:48px;padding-top:36px;border-top:1px solid var(--border)">
       <div style="text-align:center"><div style="font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--blue)">500+</div><div style="font-size:12px;color:var(--text-dim);text-transform:uppercase;letter-spacing:2px;font-weight:600">Technique Drills</div></div>
@@ -168,17 +168,13 @@ a{text-decoration:none;color:inherit}
     </div>
     <div style="border-top:1px solid var(--border);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
       <p style="font-size:12px;color:var(--text-dim);margin:0;opacity:.6">&copy; 2026 JUNBI. All rights reserved.</p>
-      <p style="font-size:12px;color:var(--text-dim);margin:0;opacity:.4">support@junbi.com</p>
+      <p style="font-size:12px;color:var(--text-dim);margin:0;opacity:.4"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b6c5c3c6c6d9c4c2f6dcc3d8d4df98d5d9db">[email&#160;protected]</a></p>
     </div>
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const hb=document.getElementById('hamburger'),mm=document.getElementById('mobile-menu');
 hb.addEventListener('click',()=>mm.classList.toggle('open'));
 mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mm.classList.remove('open')));
-const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-</script>
-</body>
-</html>
+const obs=new IntersectionOb
