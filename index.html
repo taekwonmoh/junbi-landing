@@ -8,11 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --blue:#1e90ff;--dark-blue:#1565c0;
-  --bg:#0f1117;--surface:#161a25;--surface-2:#1c2130;--border:rgba(255,255,255,.06);
-  --gold:#d4af37;--white:#fff;--text:#c8cdd5;--text-dim:#6b7280;
-}
+:root{--blue:#1e90ff;--dark-blue:#1565c0;--bg:#0f1117;--surface:#161a25;--surface-2:#1c2130;--border:rgba(255,255,255,.06);--gold:#d4af37;--white:#fff;--text:#c8cdd5;--text-dim:#6b7280}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--white);overflow-x:hidden;font-family:'Rajdhani',sans-serif}
@@ -20,15 +16,12 @@ h1,h2,h3,h4{font-family:'Bebas Neue',sans-serif;letter-spacing:2px}
 a{text-decoration:none;color:inherit}
 ::selection{background:rgba(30,144,255,.3);color:#fff}
 ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:rgba(255,255,255,.1);border-radius:3px}
-
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 @keyframes fadeIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
-
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}
-
 .nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--bg);border-bottom:1px solid var(--border);padding:12px 0}
 .nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
-.nav-logo img{height:36px}
+.nav-logo img{height:28px}
 .nav-links{display:flex;align-items:center;gap:28px}
 .nav-link{font-size:14px;font-weight:600;color:var(--text-dim);letter-spacing:1px;text-transform:uppercase;transition:color .2s}.nav-link:hover{color:var(--white)}
 .nav-cta{font-size:13px;font-weight:700;color:var(--white);letter-spacing:1px;text-transform:uppercase;padding:8px 20px;border-radius:6px;background:var(--blue);transition:opacity .2s}.nav-cta:hover{opacity:.85}
@@ -37,24 +30,16 @@ a{text-decoration:none;color:inherit}
 .mobile-menu a{display:block;font-size:16px;font-weight:600;color:var(--text);padding:12px 0;border-bottom:1px solid var(--border);text-transform:uppercase;letter-spacing:2px}
 .mobile-menu .mob-cta{text-align:center;margin-top:16px;padding:12px;border-radius:8px;background:var(--blue);border:none;color:var(--white)}
 @media(max-width:768px){.nav-links{display:none!important}.hamburger{display:flex!important}.mobile-menu.open{display:block!important}}
-
 .btn-primary{display:inline-block;font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:2px;color:var(--white);padding:14px 36px;border-radius:8px;background:var(--blue);transition:opacity .2s}.btn-primary:hover{opacity:.85}
 .btn-primary.lg{font-size:19px;padding:16px 48px}
 .btn-outline{display:inline-block;font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:2px;color:var(--text);padding:14px 36px;border-radius:8px;border:1px solid var(--border);background:transparent;transition:border-color .2s,color .2s}.btn-outline:hover{border-color:rgba(255,255,255,.2);color:var(--white)}
-
 .badge{display:inline-flex;align-items:center;gap:6px;background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.25);border-radius:20px;padding:5px 14px;font-size:13px;font-weight:700;color:var(--gold);letter-spacing:.5px}
 .badge-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);animation:pulse 2s infinite}
-
 .section{padding:80px 24px}.container{max-width:1100px;margin:0 auto}.text-center{text-align:center}
-
 .card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:32px;transition:border-color .3s}.card:hover{border-color:rgba(255,255,255,.12)}
-.card-icon{font-size:36px;margin-bottom:16px}
-.card h3{font-size:22px;margin-bottom:10px;letter-spacing:1.5px}
-.card p{font-size:15px;color:var(--text);line-height:1.7}
-
+.card-icon{font-size:36px;margin-bottom:16px}.card h3{font-size:22px;margin-bottom:10px;letter-spacing:1.5px}.card p{font-size:15px;color:var(--text);line-height:1.7}
 .inst-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;transition:border-color .3s}.inst-card:hover{border-color:rgba(255,255,255,.12)}
 .inst-avatar{width:56px;height:56px;border-radius:12px;flex-shrink:0;background:var(--surface-2);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--blue);letter-spacing:1px;border:1px solid var(--border)}
-
 .drill-card{border-radius:12px;overflow:hidden;border:1px solid var(--border);background:var(--surface);transition:border-color .3s}.drill-card:hover{border-color:rgba(255,255,255,.12)}
 .drill-thumb{aspect-ratio:16/9;position:relative;background:linear-gradient(135deg,var(--surface-2),var(--surface));display:flex;align-items:center;justify-content:center}
 .play-btn{width:52px;height:52px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;opacity:.9}
@@ -64,32 +49,24 @@ a{text-decoration:none;color:inherit}
 </head>
 <body>
 
-<!-- NAV -->
 <nav class="nav" id="navbar">
   <div class="nav-inner">
     <a href="/" class="nav-logo"><img src="images/logo-nav.png" alt="JUNBI"></a>
-    <div class="nav-links">
-      <a href="#about" class="nav-link">About</a><a href="#instructors" class="nav-link">Instructors</a><a href="#pricing" class="nav-link">Pricing</a><a href="#faq" class="nav-link">FAQ</a>
-      <a href="#signup" class="nav-cta">Start Free Trial</a>
-    </div>
+    <div class="nav-links"><a href="#about" class="nav-link">About</a><a href="#instructors" class="nav-link">Instructors</a><a href="#pricing" class="nav-link">Pricing</a><a href="#faq" class="nav-link">FAQ</a><a href="#signup" class="nav-cta">Start Free Trial</a></div>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-menu" id="mobile-menu"><a href="#about">About</a><a href="#instructors">Instructors</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#signup" class="mob-cta">Start Free Trial</a></div>
 </nav>
 
-<!-- HERO -->
 <section style="padding:140px 24px 80px;text-align:center">
   <div style="max-width:800px;margin:0 auto">
-    <img src="images/logo-nav.png" alt="JUNBI" style="height:100px;margin:0 auto 24px;display:block;animation:fadeIn .8s ease">
+    <img src="images/logo-hero.png" alt="JUNBI" style="height:120px;margin:0 auto 28px;display:block;animation:fadeIn .8s ease">
     <p style="font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,2.5vw,24px);color:var(--text-dim);letter-spacing:6px;text-transform:uppercase;margin:0 0 12px">Are You</p>
     <h1 style="font-size:clamp(56px,9vw,100px);line-height:.95;margin:0 0 20px;letter-spacing:4px"><span style="color:var(--blue)">READY</span></h1>
     <div style="width:60px;height:2px;background:var(--blue);margin:0 auto 24px;border-radius:1px"></div>
     <p style="font-size:clamp(16px,2vw,20px);color:var(--text);line-height:1.6;margin:0 auto 12px;max-width:560px">Train with world champions. 500+ drills. Master elite taekwondo techniques, anytime.</p>
     <p style="font-size:clamp(15px,1.8vw,18px);color:var(--text-dim);margin:0 auto 28px;max-width:560px"><span style="color:var(--gold);font-weight:700">$10/month</span> for founding members.</p>
-    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:28px">
-      <a href="#signup" class="btn-primary">START FREE TRIAL</a>
-      <a href="#pricing" class="btn-outline">SEE PRICING</a>
-    </div>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:28px"><a href="#signup" class="btn-primary">START FREE TRIAL</a><a href="#pricing" class="btn-outline">SEE PRICING</a></div>
     <span class="badge"><span class="badge-dot"></span>🔥 37 founding spots remaining</span>
     <div style="display:flex;gap:48px;justify-content:center;flex-wrap:wrap;margin-top:48px;padding-top:36px;border-top:1px solid var(--border)">
       <div style="text-align:center"><div style="font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--blue)">500+</div><div style="font-size:12px;color:var(--text-dim);text-transform:uppercase;letter-spacing:2px;font-weight:600">Technique Drills</div></div>
@@ -99,12 +76,10 @@ a{text-decoration:none;color:inherit}
   </div>
 </section>
 
-<!-- SOCIAL PROOF -->
 <section class="reveal" style="background:var(--surface);padding:28px 24px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
   <div style="max-width:1000px;margin:0 auto;text-align:center"><p style="font-size:14px;color:var(--text-dim);font-weight:600;text-transform:uppercase;letter-spacing:3px">Join <span style="color:var(--blue)">500+</span> ATA students &middot; Learn from <span style="color:var(--gold)">10 World Champions</span></p></div>
 </section>
 
-<!-- FEATURES -->
 <section class="section" id="about">
   <div class="container">
     <div class="text-center reveal" style="margin-bottom:48px"><h2 style="font-size:clamp(32px,4.5vw,46px)">WHY JUNBI</h2><div style="width:40px;height:2px;background:var(--blue);margin:10px auto 0;border-radius:1px"></div></div>
@@ -116,7 +91,6 @@ a{text-decoration:none;color:inherit}
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
 <section class="section" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
   <div class="container">
     <div class="text-center reveal" style="margin-bottom:48px"><h2 style="font-size:clamp(32px,4.5vw,46px)">HOW IT WORKS</h2><div style="width:40px;height:2px;background:var(--gold);margin:10px auto 0;border-radius:1px"></div></div>
@@ -128,7 +102,6 @@ a{text-decoration:none;color:inherit}
   </div>
 </section>
 
-<!-- INSTRUCTORS -->
 <section id="instructors" class="section">
   <div class="container">
     <div class="text-center reveal" style="margin-bottom:48px"><h2 style="font-size:clamp(32px,4.5vw,46px)">LEARN FROM THE BEST</h2><p style="font-size:16px;color:var(--text);margin:8px auto 0;max-width:460px">Our Foundation Faculty are world champions and elite competitors.</p><div style="width:40px;height:2px;background:var(--blue);margin:14px auto 0;border-radius:1px"></div></div>
@@ -144,7 +117,6 @@ a{text-decoration:none;color:inherit}
   </div>
 </section>
 
-<!-- SAMPLE DRILLS -->
 <section class="section" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
   <div class="container">
     <div class="text-center reveal" style="margin-bottom:48px"><h2 style="font-size:clamp(32px,4.5vw,46px)">SEE WHAT'S INSIDE</h2><div style="width:40px;height:2px;background:var(--gold);margin:10px auto 0;border-radius:1px"></div></div>
@@ -157,7 +129,6 @@ a{text-decoration:none;color:inherit}
   </div>
 </section>
 
-<!-- PRICING -->
 <section id="pricing" class="section">
   <div style="max-width:520px;margin:0 auto;text-align:center" class="reveal">
     <div style="font-size:12px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:4px;margin-bottom:14px">Limited Time Offer</div>
@@ -170,7 +141,6 @@ a{text-decoration:none;color:inherit}
   </div>
 </section>
 
-<!-- FINAL CTA -->
 <section id="signup" class="section" style="background:var(--surface);border-top:1px solid var(--border)">
   <div style="max-width:600px;margin:0 auto;text-align:center" class="reveal">
     <img src="images/logo-footer.png" alt="" style="height:50px;margin:0 auto 20px;display:block;opacity:.2">
@@ -185,12 +155,11 @@ a{text-decoration:none;color:inherit}
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer style="background:var(--bg);border-top:1px solid var(--border);padding:48px 24px 28px">
   <div style="max-width:1100px;margin:0 auto">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:36px;margin-bottom:40px">
       <div>
-        <a href="/" style="display:inline-block;margin-bottom:14px"><img src="images/logo-footer.png" alt="JUNBI" style="height:32px"></a>
+        <a href="/" style="display:inline-block;margin-bottom:14px"><img src="images/logo-nav.png" alt="JUNBI" style="height:22px"></a>
         <p style="font-size:13px;color:var(--text-dim);line-height:1.6;max-width:220px">Elite taekwondo training from world champions. Are you ready?</p>
       </div>
       <div><h4 style="font-size:14px;letter-spacing:2px;margin:0 0 14px;color:var(--text)">Platform</h4><a href="#" style="display:block;font-size:13px;color:var(--text-dim);margin-bottom:8px">About</a><a href="#" style="display:block;font-size:13px;color:var(--text-dim);margin-bottom:8px">Instructors</a><a href="#" style="display:block;font-size:13px;color:var(--text-dim);margin-bottom:8px">Pricing</a><a href="#" style="display:block;font-size:13px;color:var(--text-dim);margin-bottom:8px">FAQ</a></div>
